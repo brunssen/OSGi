@@ -1,13 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
-#bin/release <build_dir>
+cat << EOF
+default_process_types:
+  web: env
+EOF
 
-#BUILD_DIR=$1
-
-#echo "Release is now starting OSGi"
-
-#cat << EOF
-
-#default_process_types:
-#  web: java -jar $BUILD_DIR/equinox3.9/org.eclipse.osgi_3.9.0.v20130513-1345.jar -console 
-#EOF
+exit 0
